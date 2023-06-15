@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <script src="./src/js/app.js" defer></script>
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="logo"><img src="./src/images/logo.svg" alt="brand" /></div>
+      <main class="container">
+        <div class="content content--left">
+          <div class="content__bill">
+            <span class="content__subtitle">Bill</span>
+            <input type="text" class="content__input bill" placeholder="0" />
+          </div>
+
+          <div class="content__select-tip">
+            <span class="content__subtitle">Select Tip %</span>
+            <div class="tip-container">
+              <span class="tip-item">5%</span>
+              <span class="tip-item">10%</span>
+              <span class="tip-item">15%</span>
+              <span class="tip-item">25%</span>
+              <span class="tip-item">50%</span>
+              <input
+                type="text"
+                class="tip-item tip-item--custom content__input tip"
+                placeholder="custom"
+              />
+            </div>
+          </div>
+
+          <div class="content__number-of-people">
+            <div class="content__subtitle">
+              <span>Number of People</span>
+              <span class="warning">Can't be zero</span>
+            </div>
+            <input
+              type="text"
+              class="content__input people--input num-of-people"
+              placeholder="0"
+            />
+          </div>
+        </div>
+
+        <div class="content content--right">
+          <div class="content__tip-amount">
+            <div class="content__subtitle content__subtitle--light">
+              <div class="sub-container">
+                <span>Tip Amount</span>
+                <span>/ person</span>
+              </div>
+              <div class="content__amount tip-per-person">$0.00</div>
+            </div>
+          </div>
+          <div class="content__total">
+            <div class="content__subtitle content__subtitle--light">
+              <div class="sub-container">
+                <span>Total</span>
+                <span>/ person</span>
+              </div>
+              <div class="content__amount total-per-person">$0.00</div>
+            </div>
+          </div>
+
+          <div class="content__reset-btn">reset</div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
